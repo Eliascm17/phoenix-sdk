@@ -12,18 +12,21 @@ overflow-checks = true
 
 [workspace.dependencies]
 spl-token = { version = "3.2.0", features = ["no-entrypoint"] }
-spl-associated-token-account = { version = "1.1.1", features = [ "no-entrypoint" ] } 
-solana-program = "1.14.5"
-solana-account-decoder = "1.14.7"
+spl-associated-token-account = { version = "1.1.2", features = [ "no-entrypoint" ] } 
+solana-program = "1.14.16"
+solana-account-decoder = "1.14.16"
 anyhow = "1.0.52"
-solana-sdk = "1.10.32"
+solana-sdk = "1.14.16"
 borsh = "0.9.3"
 rand = "0.7.3"
 ellipsis-client = { git = "https://github.com/Eliascm17/ellipsis-client" }
+# ellipsis-client = { path = "../../ellipsis-client/ellipsis-client" }
 ellipsis-transaction-utils = { git = "https://github.com/Eliascm17/ellipsis-client" }
+# ellipsis-transaction-utils = { path = "../../ellipsis-client/transaction-utils" }
 phoenix-v1 = { git = "https://github.com/Eliascm17/phoenix-v1" }
+# phoenix-v1 = { path = "../../phoenix-v1" }
 tokio = { version = "1.23.0", features = ["full"] }
-solana-client = "1.10.32"
+solana-client = "1.14.16"
 clap = { version = "3.0.13", features = ["derive"] }
 shellexpand = "2.1.2"
 num-traits = "0.2"
@@ -33,5 +36,6 @@ itertools = "0.10.5"
 bytemuck = "1.11.0"
 serde = "^1.0.63"
 phoenix-seat-manager = { git = "https://github.com/Eliascm17/phoenix-seat-manager-v1" }
+# phoenix-seat-manager = { path = "../../phoenix-seat-manager-v1" }
 yellowstone-grpc-proto = "=1.6.0+solana.1.16.1"
 yellowstone-grpc-client = "=1.6.0+solana.1.16.1"
